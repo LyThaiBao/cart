@@ -8,8 +8,10 @@ btnAdd.forEach((btn, index) => {
     var itemTarget = e.target.parentElement.parentElement;
     var containProduct = document.querySelector(".list__item");
     var productInCart = containProduct.querySelectorAll(".item");
+    var overlay = document.querySelector(".overlay");
     var newSection = document.createElement("section");
     newSection.classList.add("item");
+    overlay.classList.remove("hide__overlay");
     newSection.innerHTML = `
                 <span class="item__name">${
                   itemTarget
