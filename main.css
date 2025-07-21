@@ -128,7 +128,7 @@ html {
   background-color: #333333a2;
 }
 .notification__add--success {
-  position: absolute;
+  position: fixed;
   background-color: #eee;
   height: 30vw;
   width: 50vw;
