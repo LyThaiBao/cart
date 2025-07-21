@@ -1,0 +1,138 @@
+#container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product__list {
+  margin-top: 20px;
+  padding-top: 0px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+.product__item {
+  width: 25%;
+}
+.product__img {
+  width: 100%;
+  border: 1px solid #333;
+  margin-bottom: 5px;
+}
+.product__img img {
+  width: 100%;
+}
+.product__price {
+  font-weight: 800;
+}
+.product__btn {
+  cursor: pointer;
+  outline: none;
+  border: unset;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: rgb(116, 233, 116);
+}
+.product__imfor {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.item__name,
+.product__name {
+  /* margin-right: 50px; */
+  font-weight: bold;
+}
+.item__img {
+  width: 60%;
+}
+.item__img img {
+  width: 150px;
+}
+.delete__item {
+  margin-left: 60px;
+}
+.cart {
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 60vw;
+  padding: 20px 20px;
+  transition: transform 0.4s linear;
+}
+.hide__cart {
+  transform: translateX(100vw);
+}
+.hide__overlay {
+  opacity: 0;
+  display: none;
+}
+.list__item {
+  height: 90vh;
+  overflow-y: scroll;
+  margin-bottom: 50px;
+}
+.item__quality {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+.item__quality input {
+  width: 50px;
+}
+.overlay {
+  transition: all 0.2s linear;
+  position: fixed;
+  inset: 0;
+  background-color: #333333a2;
+}
+.notification__add--success {
+  position: absolute;
+  background-color: #eee;
+  height: 30vw;
+  width: 50vw;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.title,
+.content {
+  text-align: center;
+}
+.content {
+  font-size: 1.8rem;
+}
+.notification {
+  width: 50%;
+  height: 70%;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.notification__add--success {
+  border-radius: 15px;
+  padding: 10px;
+}
+.notification__add--success,
+.fa-square-xmark {
+  font-size: 1.6rem;
+}
+.notification__add--success .fa-square-xmark {
+  cursor: pointer;
+  color: red;
+}
+.notification___header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

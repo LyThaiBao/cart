@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="overlay hide__overlay"></div>
+      <div
+        class="icon__cart"
+        style="
+          text-align: right;
+          font-size: 2rem;
+          color: rgb(224, 164, 53);
+          cursor: pointer;
+        "
+      >
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <div class="product__list">
+        <div class="product__item">
+          <div class="product__img">
+            <img src="./image/img1.jpg" alt="" />
+          </div>
+          <dic class="product__imfor">
+            <div class="product__name">Áo con hổ</div>
+            <div class="product__price">100</div>
+            <button class="product__btn">Add cart</button>
+          </dic>
+        </div>
+        <div class="product__item">
+          <div class="product__img">
+            <img src="./image/img2.jpg" alt="" />
+          </div>
+          <div class="product__imfor">
+            <div class="product__name">Áo đi chơi</div>
+            <div class="product__price">120</div>
+            <button class="product__btn">Add cart</button>
+          </div>
+        </div>
+        <div class="product__item">
+          <div class="product__img">
+            <img src="./image/img4.jpg" alt="" />
+          </div>
+          <div class="product__imfor">
+            <div class="product__name">Áo thể thao</div>
+            <div class="product__price">200</div>
+            <button class="product__btn">Add cart</button>
+          </div>
+        </div>
+        <div class="product__item">
+          <div class="product__img">
+            <img src="./image/img3.jpg" alt="" />
+          </div>
+          <div class="product__imfor">
+            <div class="product__name">Đồ bộ trẻ em</div>
+            <div class="product__price">50</div>
+            <button class="product__btn">Add cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart hide__cart">
+        <div
+          class="header__cart"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+          <strong
+            >Tổng Cộng:
+            <span class="total__price" style="color: red">0</span></strong
+          >
+          <div class="close" style="font-size: 1.5rem; cursor: pointer">
+            <i class="fa-solid fa-square-xmark"></i>
+          </div>
+        </div>
+        <h2 style="text-align: center">Product</h2>
+        <div class="list__item"></div>
+      </div>
+      <div class="notification__add--success hide__overlay  ">
+        <div class="notification___header">
+          <h3 class="title">Thông Báo</h3>
+          <i class="fa-solid fa-square-xmark"></i>
+        </div>
+        <p class="content">Thêm sản phẩm thành công</p>
+        <!-- <img src="./image/notification.jpg" alt="" class="notification" /> -->
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
