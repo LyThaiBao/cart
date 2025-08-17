@@ -10,6 +10,7 @@ btnAdd.forEach((btn, index) => {
     var productInCart = containProduct.querySelectorAll(".item");
     var overlay = document.querySelector(".overlay");
     var newSection = document.createElement("section");
+
     newSection.classList.add("item");
     overlay.classList.remove("hide__overlay");
     newSection.innerHTML = `
@@ -97,6 +98,7 @@ function displayCart() {
   var boxCart = document.querySelector(".cart");
   var iconClose = document.querySelector(".close");
   var overlay = document.querySelector(".overlay");
+  var notification = document.querySelector(".notification__add--success");
   var closeNotification = document.querySelector(
     ".notification___header .fa-square-xmark"
   );
@@ -111,6 +113,7 @@ function displayCart() {
   overlay.addEventListener("click", (e) => {
     boxCart.classList.add("hide__cart");
     overlay.classList.add("hide__overlay");
+    notification.classList.add("hide__overlay");
   });
   closeNotification.addEventListener("click", (e) => {
     console.log(closeNotification.parentElement.parentElement);
